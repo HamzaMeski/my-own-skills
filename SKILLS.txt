@@ -1,0 +1,81 @@
+HOW TO READ THIS LIST
+Each entry says what the tool does for Claude, when to use it, and whether it has been used on real work yet.
+
+
+ELITE FRONTEND:
+
+https://github.com/leonxlnx/taste-skill
+Role: The art director. Sets a strong visual direction before any code and catches generic "AI-looking" design.
+When: At the start of a new design, and to inspect the page afterward.
+Status: Used. It gave Plumb its direction.
+
+https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines
+Role: The rule book. Checks interface code against web design and accessibility rules.
+When: After building, as a final check of the code.
+Status: Not used on real work yet.
+
+https://github.com/voltagent/awesome-design-md
+Role: The reference library. Design systems from well-known sites, written so an AI can follow them.
+When: When a new site needs a design reference to start from.
+Status: Not used on real work yet.
+
+https://github.com/microsoft/playwright-cli
+Role: The tester. Lets Claude drive real Chrome, click through the site, take screenshots, measure speed and simulate slow phones.
+When: On every build, before calling anything done.
+Status: Used heavily on Plumb and DeckCrew.
+
+
+FIGMA DESIGN SKILLS:
+
+https://www.figma.com/community/skill/61238/better-interface
+Role: The detail specialist. Rules for the small things that make a page feel expensive: UI, accessibility, layout, typography and writing.
+When: While building each section.
+Status: Chosen. Not used yet.
+
+https://www.figma.com/community/skill/68151/find-animation-opportunities
+Role: The motion editor. Finds where animation really helps and rejects the rest, so the page never feels slow or overdone. It only suggests, it doesn't change code.
+When: After the page is built, before adding more motion.
+Status: Chosen. Not used yet.
+
+https://www.figma.com/community/skill/65434/superfuture-design-review
+Role: The tough critic. Reviews hierarchy, type, spacing, contrast, motion, states, phone layout and accessibility, then ranks each problem from blocking to polish with a specific fix.
+When: Last step before showing a page to anyone.
+Status: Chosen. Not used yet.
+
+
+Replica Skil:
+
+https://github.com/Jakeschincariol/replica-skill
+Role: The market researcher. Studies other businesses in the same niche, finds their weaknesses and turns them into ideas for our site.
+When: Before designing, when a site needs to beat its local competitors.
+Status: Used for the first template's research.
+
+
+Mapping entire project:
+
+https://github.com/Graphify-Labs/graphify
+Role: The map maker. Turns a whole codebase into a map, so Claude can understand a big project faster.
+When: When this project or Pinweaver grows too big to read file by file.
+Status: Not used yet.
+
+
+UI libraries:
+
+Role of all three: Ready-made animated components to borrow from, so we don't rebuild common effects from scratch. Check each one's license and adapt it to the client's brand.
+When: While building, only when a component really fits the design.
+Status: Not used yet.
+
+Skipper UI
+Vengence UI
+Animaster Lab
+
+
+THE ORDER FOR A NEW SITE
+
+1. Replica Skil: learn the market.
+2. Taste Skill and awesome-design-md: choose the direction.
+3. better-interface and the UI libraries: build it.
+4. find-animation-opportunities: add only the motion that earns its place.
+5. superfuture-design-review and web-design-guidelines: critique it and fix what they find.
+6. Playwright CLI: test it on desktop and phone.
+7. Graphify: only when a project gets too big to hold in your head.
