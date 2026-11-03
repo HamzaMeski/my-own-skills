@@ -4,6 +4,10 @@ Each entry says what the tool does for Claude, when to use it, and whether it ha
 
 ELITE FRONTEND:
 
+https://github.com/JCodesMore/ai-website-cloner-template
+Role: Clone any website with one command
+When: whenever trying to reverse engineer a website FRONTEND.
+
 https://github.com/leonxlnx/taste-skill
 Role: The art director. Sets a strong visual direction before any code and catches generic "AI-looking" design.
 When: At the start of a new design, and to inspect the page afterward.
